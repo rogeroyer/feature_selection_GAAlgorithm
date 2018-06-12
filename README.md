@@ -2,7 +2,7 @@
 
 ### 使用手册
 
-- 更换dataSet目录里面的数据集
+- 更换dataSet目录里面的数据集（数据集过大我只上传了一小部分）
     - train_feature.csv : 训练集
     - validate_feature.csv ： 验证集
     - 注：两个数据集内的维度要一致。且包含一个标签列，并命名为“target”.
@@ -20,4 +20,4 @@
 ***
 
 ### 结果
-程序运行过程会打印出中间过程，最终会绘出迭代次数与最优个体适应图的折线图以及打印出最有个体及其适应度。
+程序运行过程会打印出中间过程，最终会绘出迭代次数与最优个体适应图的[折线图](https://github.com/rogeroyer/feature_selection_GAAlgorithm/blob/master/result.jpg)以及打印出最有个体及其适应度。
