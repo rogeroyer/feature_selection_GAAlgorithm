@@ -31,12 +31,13 @@ class GA(object):
         """初始化种群"""
         self.lives = []
         count = 0
-        while count < 30:
+        while count < self.lifeCount:
             gene = np.random.randint(0, 2, self.geneLenght)
-            if sum(gene) < 40:
-                continue
-            random.shuffle(gene)               # 随机洗牌 #
             life = Life(gene)
+            random.shuffle(gene)  # 随机洗牌 #
+            if self.matchFun(life) < 0.8025:  # (sum(life.gene) < 40) and  筛选更优的个体
+                continue
+
             self.lives.append(life)
             count += 1
 
