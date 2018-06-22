@@ -9,6 +9,8 @@
     
 - 更换self.columns为train_feature.csv内的属性名，且第一个元素必须为“target”
 
+- Genetic_algorithm.py众初始化种群initPopulation那里也要做相应修改
+
 - 修改self.ga类参数(可选)
 
 - 修改主函数里的群体个数和迭代次数(可选)
