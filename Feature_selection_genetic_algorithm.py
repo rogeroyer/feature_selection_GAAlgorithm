@@ -45,8 +45,7 @@ class FeatureSelection(object):
             'max_depth': 5,
             'colsample_bytree': 0.8,
             'lambda_l2': 0.01,
-            # 'feature_fraction': 0.9,
-            # 'bagging_fraction': 0.95,
+            'verbose': -1,     # inhibit print info #
         }
         rounds = 100
         watchlist = [d_train]
@@ -99,5 +98,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-# 0.783805
 
