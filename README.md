@@ -1,5 +1,13 @@
 <h2 align="center">基于遗传算法做特征选择</h2>
 
+### 运行环境
+- python3.5+
+- numpy
+- pandas
+- matplotlib
+- sklearn
+- LightGBM
+
 ### 使用手册
 
 - 更换dataSet目录里面的数据集（数据集过大我只上传了一小部分）
@@ -23,6 +31,8 @@
 
 ### 结果
 程序运行过程会打印出中间过程，最终会绘出迭代次数与最优个体适应图的[折线图](https://github.com/rogeroyer/feature_selection_GAAlgorithm/blob/master/result.jpg)以及打印出最有个体及其适应度。
+
+***
 
 ### Attention
 
