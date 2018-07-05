@@ -23,3 +23,7 @@
 
 ### 结果
 程序运行过程会打印出中间过程，最终会绘出迭代次数与最优个体适应图的[折线图](https://github.com/rogeroyer/feature_selection_GAAlgorithm/blob/master/result.jpg)以及打印出最有个体及其适应度。
+
+### Attention
+
+`经过两个不同比赛的尝试，评价指标分别是f1_score和auc，线上线下同增减的使用本算法才能收获一个好的结果。`
