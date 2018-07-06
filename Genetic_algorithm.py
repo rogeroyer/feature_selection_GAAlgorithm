@@ -35,9 +35,6 @@ class GA(object):
             gene = np.random.randint(0, 2, self.geneLenght)
             life = Life(gene)
             random.shuffle(gene)  # 随机洗牌 #
-            if self.matchFun(life) < 0.8025:  # (sum(life.gene) < 40) and  筛选更优的个体
-                continue
-
             self.lives.append(life)
             count += 1
 
