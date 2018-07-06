@@ -13,9 +13,9 @@
 - 更换dataSet目录里面的数据集（数据集过大我只上传了一小部分）
     - train_feature.csv : 训练集
     - validate_feature.csv ： 验证集
-    - 注：两个数据集内的维度要一致。且包含一个标签列，并命名为“target”.
+    - 注：两个数据集内的维度要一致。且包含一个标签列，并命名为“target”
     
-- 更换self.columns为train_feature.csv内的属性名，且第一个元素必须为“target”
+- 更换self.columns为train_feature.csv内的属性名，且第一个元素必须为标签名“target”,其它全为特征名称
 
 - Genetic_algorithm.py众初始化种群initPopulation那里也要做相应修改
 
