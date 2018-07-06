@@ -25,7 +25,7 @@ class FeatureSelection(object):
 
     def auc_score(self, order):
         print(order)
-        features = list(self.train_data.columns)[1:]
+        features = self.columns[1:]
         features_name = []
         for index in range(len(order)):
             if order[index] == 1:
@@ -73,7 +73,7 @@ class FeatureSelection(object):
         print('当前最好特征组合:')
         string = []
         flag = 0
-        features = list(self.train_data.columns)[1:]
+        features = self.columns[1:]
         for index in self.ga.gene:                                  ####
             if index == 1:
                 string.append(features[flag])
@@ -91,7 +91,7 @@ class FeatureSelection(object):
 
 def main():
     fs = FeatureSelection(aLifeCount=20)
-    rounds = 10    # 算法迭代次数 #
+    rounds = 100    # 算法迭代次数 #
     fs.run(rounds)
 
 
