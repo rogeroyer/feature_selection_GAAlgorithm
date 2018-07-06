@@ -20,7 +20,7 @@ class FeatureSelection(object):
         self.ga = GA(aCrossRate=0.7,
                      aMutationRage=0.1,
                      aLifeCount=self.lifeCount,
-                     aGeneLenght=self.validate_data.shape[1] - 1,
+                     aGeneLenght=len(self.columns) - 1,
                      aMatchFun=self.matchFun())
 
     def auc_score(self, order):
