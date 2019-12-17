@@ -71,7 +71,7 @@ class FeatureSelection(object):
             n -= 1
 
         print('当前最好特征组合:')
-        string = []
+        string = []图腾11
         flag = 0
         features = self.columns[1:]
         for index in self.ga.gene:                                  ####
